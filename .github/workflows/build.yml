@@ -55,77 +55,13 @@ jobs:
       matrix:
         include:
           - arch: esp32s3
-            board: seeed-sensecap-indicator-tft
+            board: CDEBYTE_EoRa-S3
             artifact-paths: |
               release/*.bin
               release/*.elf
 
-          - arch: esp32s3
-            board: mesh-tab-3-2-TN-resistive
-            artifact-paths: |
-              release/*.bin
-              release/*.elf
-
-          - arch: esp32s3
-            board: mesh-tab-3-2-IPS-resistive
-            artifact-paths: |
-              release/*.bin
-              release/*.elf
-
-          - arch: esp32s3
-            board: mesh-tab-3-5-IPS-resistive
-            artifact-paths: |
-              release/*.bin
-              release/*.elf
-
-          - arch: esp32s3
-            board: mesh-tab-3-5-TN-resistive
-            artifact-paths: |
-              release/*.bin
-              release/*.elf
-
-          - arch: esp32s3
-            board: mesh-tab-3-2-IPS-capacitive
-            artifact-paths: |
-              release/*.bin
-              release/*.elf
-
-          - arch: esp32s3
-            board: mesh-tab-3-5-IPS-capacitive
-            artifact-paths: |
-              release/*.bin
-              release/*.elf
-
-          - arch: esp32s3
-            board: mesh-tab-4-0-IPS-capacitive
-            artifact-paths: |
-              release/*.bin
-              release/*.elf
-
-          - arch: esp32s3
-            board: t-deck
-            artifact-paths: |
-              release/*.bin
-              release/*.elf
-
-          - arch: nrf52840
-            board: xiao_ble
-            artifact-paths: |
-              release/*.hex
-              release/*.uf2
-              release/*.elf
-              release/*.zip
-
-          - arch: nrf52840
-            board: heltec-mesh-node-t114
-            artifact-paths: |
-              release/*.hex
-              release/*.uf2
-              release/*.elf
-              release/*.zip
-
-          - arch: esp32s3
-            board: t-energy-s3_e22
+          - arch: esp32c3
+            board: esp32c3_super_mini
             artifact-paths: |
               release/*.bin
               release/*.elf
