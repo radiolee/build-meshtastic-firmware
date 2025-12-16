@@ -1,4 +1,4 @@
-name: Build
+name: Build-my-c3
 on:
   # # Triggers the workflow on push but only for the master branch
   # push:
