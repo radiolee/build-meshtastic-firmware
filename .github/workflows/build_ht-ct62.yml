@@ -71,7 +71,7 @@ jobs:
     steps:
       - id: checkout_meshtastic
         uses: actions/checkout@v5
-        name: Checkout Meshtastic firmware
+        name: Checkout radiolee firmware
         with:
           repository: radiolee/firmware
           ref: ${{ env.meshtastic_firmware_ref }}
