@@ -1,4 +1,4 @@
-name: Build-my-c3
+name: Build-ht62
 on:
   # # Triggers the workflow on push but only for the master branch
   # push:
@@ -56,7 +56,7 @@ jobs:
         include:
         
           - arch: esp32c3
-            board: heltec_esp32c3
+            board: heltec-ht62-esp32c3-sx1262
             artifact-paths: |
               release/*.bin
               
