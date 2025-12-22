@@ -23,7 +23,7 @@ on:
         description: Meshtastic firmware ref
         required: true
         type: string
-        default: master
+        default: develop
       create_release:
         description: Create Release
         required: false
@@ -37,7 +37,7 @@ on:
         description: Meshtastic firmware ref
         required: true
         type: string
-        default: master
+        default: develop
       create_release:
         description: Create Release
         required: false
