@@ -14,8 +14,8 @@ on:
   #     - "**.md"
   #     #- "**.yml"
 
-  schedule:
-    - cron: '0 22 * * *'  # Nightly master build
+  #schedule:
+  #  - cron: '0 22 * * *'  # Nightly master build
 
   workflow_dispatch:
     inputs:
