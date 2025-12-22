@@ -45,7 +45,7 @@ on:
         default: false
 
 env:
-  meshtastic_firmware_ref: ${{ inputs.meshtastic_firmware_ref || 'master' }}
+  meshtastic_firmware_ref: ${{ inputs.meshtastic_firmware_ref || 'develop' }}
 
 jobs:
   build:
@@ -58,19 +58,13 @@ jobs:
             board: CDEBYTE_EoRa-S3
             artifact-paths: |
               release/*.bin
-              release/*.elf
-
-          - arch: esp32c3
-            board: esp32c3_super_mini
-            artifact-paths: |
-              release/*.bin
-              release/*.elf
+#              release/*.elf
 
           - arch: rp2040
             board: pico_slowclock
             artifact-paths: |
               release/*.uf2
-              release/*.elf
+#              release/*.elf
 
     runs-on: ubuntu-24.04
     outputs:
