@@ -56,7 +56,7 @@ jobs:
         include:
 
           - arch: esp32c3
-            board: esp32c3_hezhou
+            board: hezhou
             artifact-paths: |
               release/*.bin
 
