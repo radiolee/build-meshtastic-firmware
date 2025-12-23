@@ -1,4 +1,4 @@
-name: Build
+name: Build_fw
 
 on:
   workflow_call:
