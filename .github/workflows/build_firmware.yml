@@ -1,4 +1,4 @@
-name: Build_fw
+name: Build_firmware
 
 on:
   workflow_call:
