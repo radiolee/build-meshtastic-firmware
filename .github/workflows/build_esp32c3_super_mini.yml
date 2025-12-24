@@ -23,7 +23,7 @@ on:
         description: Meshtastic firmware ref
         required: true
         type: string
-        default: develop
+        default: beta
       create_release:
         description: Create Release
         required: false
@@ -37,7 +37,7 @@ on:
         description: Meshtastic firmware ref
         required: true
         type: string
-        default: develop
+        default: beta
       create_release:
         description: Create Release
         required: false
@@ -45,7 +45,7 @@ on:
         default: false
 
 env:
-  meshtastic_firmware_ref: ${{ inputs.meshtastic_firmware_ref || 'develop' }}
+  meshtastic_firmware_ref: ${{ inputs.meshtastic_firmware_ref || 'beta' }}
 
 jobs:
   build:
