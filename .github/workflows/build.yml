@@ -98,7 +98,7 @@ jobs:
       - name: Store binaries as an artifact
         uses: actions/upload-artifact@v4
         with:
-          name: firmware-${{ matrix.arch }}-${{ matrix.board }}-${{ steps.build.outputs.version }}.zip
+          name: firmware-${{ matrix.arch }}-${{ matrix.board }}
           overwrite: true
           path: |
             ${{ matrix.artifact-paths }}
